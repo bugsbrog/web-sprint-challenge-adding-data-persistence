@@ -20,6 +20,7 @@ async function getAllProjects() {
             }
         }
     })
+
     return result
 }
 
