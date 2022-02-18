@@ -27,11 +27,11 @@ In this project you will be given a set of requirements and must design a databa
 
 ✓ 3. `api/server.js`
 
-4. `model.js` inside `api/project`, `api/resource` and `api/task`
+✓ 4. `model.js` inside `api/project`, `api/resource` and `api/task`
 
-5. `router.js` inside `api/project`, `api/resource` and `api/task`
+✓ 5. `router.js` inside `api/project`, `api/resource` and `api/task`
 
-6. migration file(s)
+✓ 6. migration file(s)
 
 7. seed file(s) **optional**
 
@@ -88,7 +88,7 @@ Build an API inside the `api` folder with endpoints for:
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `[{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}]`
 
-- [ ] `[POST] /api/tasks`
+- [X] `[POST] /api/tasks`
   - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_id:1}`
 
@@ -107,16 +107,30 @@ Build an API inside the `api` folder with endpoints for:
 
 ## Submission format
 
-- [ ] Submit via Codegrade by pushing commits to your `main` branch on Github.
-- [ ] Check Codegrade before the deadline to compare its results against your local tests.
-- [ ] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
-- [ ] New commits will be evaluated by Codegrade if pushed _before_ the sprint challenge deadline.
+- [X] Submit via Codegrade by pushing commits to your `main` branch on Github.
+- [X] Check Codegrade before the deadline to compare its results against your local tests.
+- [X] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
+- [X] New commits will be evaluated by Codegrade if pushed _before_ the sprint challenge deadline.
 
 ## Interview Questions
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers beforehand.
 
 1. Explain the difference between Relational Databases and SQL.
+
+Relational Databases
+In relational databases, the data is stored in tabular format grouped into rows and columns (similar to spreadsheets).
+
+SQL is a standard language, which means that it will certainly be supported, no matter how your database is managed. Data Definition Language (DDL) is used to modify database objects (CREATE TABLE, ALTER TABLE, DROP TABLE), Data Manipulation Language (DML) is used to manipulate the data stored in the database (INSERT, UPDATE, DELETE), Data Query Language (DQL) is used to ask questions about the data stored in the database (SELECT), Data Control Language (DCL) is used to manage database security and user's access to data (GRANT, REVOKE), & Transaction Control Commands are used for managing groups of statements that must execute as a unit or not execute at all (COMMIT, ROLLBACK).
+
 2. Why do tables need a Primary Key?
+
+A Primary Key is a way to identify each entry in the database uniquely.
+
 3. What is the name given to a table column that references the Primary Key on another table?
+
+A foreign key is a name given to a table column that references the Primary Key on another table
+
 4. What do we need in order to have a _many to many_ relationship between two tables?
+
+An intermediary table that holds foreign keys that reference the primary key on the related tables.
