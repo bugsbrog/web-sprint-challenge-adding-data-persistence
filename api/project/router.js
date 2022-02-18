@@ -1,5 +1,6 @@
-const router = require('express').Router()
 const Project = require('./model')
+
+const router = require('express').Router()
 
 router.get('/', async (req, res, next) => {
     try {

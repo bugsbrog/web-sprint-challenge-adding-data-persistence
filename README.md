@@ -77,7 +77,7 @@ Build an API inside the `api` folder with endpoints for:
 - [ ] `[POST] /api/resources`
   - Example of response body: `{"resource_id":1,"resource_name":"foo","resource_description":null}`
 
-- [ ] `[GET] /api/resources`
+- [X] `[GET] /api/resources`
   - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
 
 - [X] `[POST] /api/projects`

@@ -3,7 +3,7 @@ const db = require('../../data/dbConfig')
 async function getAllProjects() {
     const projs = await db('projects')
 
-    const projMap = projs.map(proj => {
+    const result = projs.map(proj => {
         if (proj.project_completed === 0) {
             return {
                 project_id: proj.project_id,
@@ -20,7 +20,7 @@ async function getAllProjects() {
             }
         }
     })
-    return projMap
+    return result
 }
 
 async function create(project) {
